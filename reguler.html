@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background-color: #09464b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 27px;
+            color: #FFF5E0;
+            font-weight: 600;
+        }
+        .navbar a {
+            position: relative;
+            text-decoration: none;
+            color: #FFF5E0;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background : #FFF5E0;
+            transition: .5s;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        .biaya {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            padding-top: 150px;
+        }
+        .biaya a {
+            text-decoration: none;
+            color: #bebebe;
+        }
+        .biaya table {
+            width: 100%;
+            border: 0px;
+        }
+        .biaya h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .row {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .biaya-col {
+            flex-basis: 23%;
+            background:#FFF5E0;
+            border-radius: 15px;
+            margin-bottom: 5%;
+            padding: 15px 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: .4s;
+        }
+        .biaya-col:hover {
+            transform: scale(1.1);
+        }
+        .biaya-col h3 {
+            text-align: left;
+            font-weight: 600;
+           
+        }
+        .biaya-col p {
+            margin-top: 20px;
+        }
+        hr.garis {
+            margin-top: 5px;
+            border: 2px solid;
+            margin-right: 140px;
+        }
+        table, th, td {
+        border: 0px solid black;
+         border-collapse: collapse;
+        }
+        .rincian {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+        .rincian h3 {
+            font-weight: 600;
+        }
+        .tabel-rincian table {
+            width: 100%;
+            text-align: left;
+            margin-top: 15px;
+        }
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+        button {
+            margin-left: 90%;
+            border-radius: 6px;
+            margin-top: 15px;
+            padding: 10px 0;
+            color: cadetblue;
+            outline: none;
+            background-color: white;
+            border: 1px solid cadetblue;
+            width: 10%;
+            transition: .4s;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #09464b;
+            color: #ffffff;
+        }
+        label {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Sumeru Akademiya</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </div>
+
+    <section class="biaya">
+        <table>
+            <tr>
+                <td>Hi, Rahman</td>
+            </tr>
+            <tr>
+                <td><h1>SPP Kelas Reguler</h1></td>
+               <!--<td style="text-align: right;"><a href="ekstensi.html">Karyawan ></td>-->
+            </tr>
+        </table>
+        
+        <div class="row">
+            <div class="biaya-col">
+                <h3>Unpaid</h3>
+                <hr class="garis" style="color: rgb(120, 36, 177);">
+                <p>Rp 10.000.000</p>
+            </div>
+            <div class="biaya-col">
+                <h3>*Syarat KRS</h3>
+                <hr class="garis" style="color: rgb(241, 114, 23);">
+                <p>Rp 500.000</p>
+            </div>
+            <div class="biaya-col">
+                <h3>*Syarat UAP</h3>
+                <hr class="garis" style="color: rgb(49, 92, 184);">
+                <p>Rp 1.500.000</p>
+            </div>
+            <div class="biaya-col">
+                <h3>*Syarat UPM</h3>
+                <hr class="garis" style="color: rgb(26, 226, 206);">
+                <p>Rp 1.500.000</p>
+            </div>    
+        </div>
+    </section>
+
+    <section class="rincian">
+        <h3>Rincian Biaya</h3>
+
+        <div class="tabel-rincian">
+            <table id="customers">
+                <tr>
+                    <td><input type="checkbox"><label>SPP Semester</label><br></td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><label>*UAP</label><br></td>
+                    <td>1.500.000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><label>*UPM</label><br></td>
+                    <td>1.500.000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><label>*KRS</label><br></td>
+                    <td>500.000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><label>*Registrasi</label><br></td>
+                    <td>1.000.000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><label>Lab Komputer</label><br></td>
+                    <td>500.000</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 600; font-size: 20px;">Total</td>
+                    <td style="font-weight: 600; font-size: 20px;">10.000.000</td>
+                </tr>
+              </table>
+        </div>
+        <p style="margin-top: 10px; font-size: 13px;">Note</p>
+        <p style="font-size: 13px;">*) Pembayaran yang didahulukan</p>
+        <button type="button">BAYAR</button>
+    </section>
+    
+</body>
+</html>

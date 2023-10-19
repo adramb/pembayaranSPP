@@ -3,9 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - SPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background-image: url(image/home3.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background-color: #FFF5E0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 27px;
+            color: rgb(20, 30, 70);
+            font-weight: 600;
+        }
+        .navbar a {
+            position: relative;
+            text-decoration: none;
+            color: rgb(20, 30, 70);
+            font-size: 15px;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background : #09464b;
+            transition: .5s;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        .kata {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            padding-top: 250px;
+            text-align: center;
+        }
+        .kata h1 {
+            font-weight: 800;
+            font-size: 50px;
+            color:  rgb(20, 30, 70);
+        }
+        .kata p {
+            margin-top: 35px;
+        }
+        .kelas {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .kelas p {
+            color:white;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .row {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .kelas-col {
+            flex-basis: 47%;
+            background: #09464b;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: .4s;
+        }
+        .kelas-col:hover {
+            transform: scale(1.1);
+        }
+        .kelas-col h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+            color: white;
+        }
+        button {
+            border-radius: 50px;
+            margin-top: 15px;
+            padding: 5px 0;
+            color: #09464b;
+            outline: none;
+            background-color:#FFF5E0;
+            border: 1px solid cadetblue;
+            width: 20%;
+            transition: .4s;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: cadetblue;
+            color: #ffffff;
+        }
+        .kelas-col i {
+            margin-top: 5px;
+            font-size: 25px;
+        }
+        </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil, fuga temporibus suscipit sunt sint dolorum delectus, quaerat quis reiciendis iusto nulla commodi nemo tenetur a facere itaque, veritatis rem.</h1>
+    <div class="header">
+        <a href="#" class="logo">Sumeru Akademiya</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="kata">
+        <h1>Website Pembayaran SPP</h1>
+        <h1>Sumeru Akademiya</h1>
+        <p>"Bayaran Lancar, Lulus pun Lancar"</p>
+    </div>
+
+    <section class="kelas">
+        <div class="row">
+            <div class="kelas-col">
+                <h3>Kelas Reguler</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus rem quisquam soluta doloremque veniam nostrum. Odit, et labore? Laudantium vel id voluptate veniam non sint unde! Eum suscipit incidunt eaque.</p>
+                <a href="loginReg.html"><button type="button"><i class='bx bxs-chevron-right'></i></button></a>
+            </div>
+            <div class="kelas-col">
+                <h3>Kelas Extension</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ducimus repellendus itaque voluptatum laboriosam fugit asperiores quis, necessitatibus,
+                ipsum libero fugiat minus</p>
+                <a href="loginExt.html"><button type="button"><i class='bx bxs-chevron-right'></i></button></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

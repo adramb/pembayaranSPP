@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background-color: #09464b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 27px;
+            color: #FFF5E0;
+            font-weight: 600;
+        }
+        .navbar a {
+            position: relative;
+            text-decoration: none;
+            color: #FFF5E0;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background : #FFF5E0;
+            transition: .5s;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        body {
+            background-color: #FFF5E0;
+        }
+        .contact {
+            width: 90%;
+            margin: auto;
+            text-align: left;
+            padding-top: 60px;
+            color: #09464b;
+        }
+        .row {
+            margin-top: 90px;
+        }
+        .column {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            height: 525px;
+            background-color: #09464b;
+            border-radius: 13px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column h1 {
+            padding: 15px;
+            color: #FFF5E0;
+            font-weight: 500;
+            margin-right: 330px;
+            text-align: right;
+        }
+        .hero {
+            width: 100%;
+            margin-left: 60px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            
+        }
+        form {
+            width: 100%;
+            max-width: 700px;
+            
+        }
+        .input-group {
+            margin-bottom: 14px;
+            position: relative;
+        }
+        input, textarea {
+             width: 80%;
+             padding: 5px;
+             padding-left: 15px;
+             outline: 0;
+             border: 2px solid #09464b;
+             color: #000000;
+             font-size: 15px;
+             resize: none;
+             border-radius: 13px;
+        }
+        label {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-top: 8px;
+            padding-left: 12px;
+            color: #767677;
+            cursor: text;
+            transition: 0.3s;
+            font-size: 15px;
+        }
+        
+        button {
+            padding: 10px 0;
+            color: #000000;
+            outline: none;
+            background-color: #FFF5E0;
+            border: 0px;
+            width: 20%;
+            cursor: pointer;
+            border-radius: 13px;
+            transition: .3s;
+            
+        }
+        button:hover {
+            background-color: cadetblue;
+            color: #ffffff;
+        }
+        input:focus~label,
+        input:valid~label,
+        textarea:focus~label,
+        textarea:valid~label{
+            top: -25px;
+            font-weight: 100;
+            font-size: 1px;
+            color: #09464b;
+        }
+        .cekin {
+            padding-right: 20%;
+            margin-top: 28px;
+        }
+        .cekin a {
+            text-decoration: none;
+            color: #FFF5E0;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #FFF5E0;
+            margin-top: 20px;
+            font-weight: 200;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .hero p:hover {
+            transform: scale(1.1);
+        }
+        .hero b {
+            font-size: 23px;
+            cursor:default;
+        }
+        .input-group i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Sumeru Akademiya</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </div>
+    <div class="contact">
+        <div class="row">
+            <div class="column">
+                <h1>Send your request</h1>
+                <div class="hero">
+                    <div class="cekin">
+                        <p><b>Layanan Umum</b><br><a href="https://api.whatsapp.com/send/?phone=6285172421022&text&type=phone_number&app_absent=0">+62 8123 45678</p></a>
+                        <p><b>Email Akademiya</b><br>contact@akademiya.sumeru</p>
+                        <p><b>Kantor</b><br><a href="https://maps.app.goo.gl/ET6kQexc7iHhVSUp6">'106 Yazadaha Pool, Sumeru City, Teyvat</p></a>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name"><i class='bx bxs-user'></i></label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="number" required>
+                            <label for="number"><i class='bx bxs-phone' ></i></i></label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="email" required>
+                            <label for="email"><i class='bx bxs-envelope' ></i></label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="8" required></textarea>
+                            <label for="message"><i class='bx bxs-message-alt'></i></label>
+                        </div>
+                        
+                        <button type="submit">SUBMIT</button>
+                        
+                    </form>
+                    
+                </div>     
+            </div>
+        </div>
+    </div>
+</body>
+</html>
