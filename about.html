@@ -21,24 +21,28 @@
             left: 0;
             width: 100%;
             padding: 20px 100px;
-            background-color: #09464b;
+            background-color: #FFF5E0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 100;
         }
+        body {
+            background-color: #09464b;
+        }
         .logo {
             text-decoration: none;
             font-size: 27px;
-            color: white;
+            color: #09464b;
             font-weight: 600;
         }
         .navbar a {
             position: relative;
             text-decoration: none;
-            color: white;
+            color: #09464b;
             font-size: 15px;
             margin-left: 20px;
+            font-weight: 600;
         }
         .navbar a::before {
             content: '';
@@ -47,7 +51,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background : #FFF5E0;
+            background : #09464b;
             transition: .5s;
         }
         .navbar a:hover::before {
@@ -59,102 +63,60 @@
             text-align: left;
             padding-top: 150px;
         }
-        .biaya a {
-            text-decoration: none;
-            color: #bebebe;
-        }
         .biaya table {
             width: 100%;
             border: 0px;
         }
         .biaya h1 {
+            color: #FFF5E0;
             font-size: 36px;
             font-weight: 600;
         }
-        .row {
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .biaya-col {
-            flex-basis: 23%;
-            background:#FFF5E0;
-            border-radius: 15px;
-            margin-bottom: 5%;
-            padding: 15px 15px;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: .4s;
-        }
-        .biaya-col:hover {
-            transform: scale(1.1);
-        }
-        .biaya-col h3 {
-            text-align: left;
-            font-weight: 600;
-           
-        }
-        .biaya-col p {
-            margin-top: 20px;
-        }
-        hr.garis {
-            margin-top: 5px;
-            border: 2px solid;
-            margin-right: 140px;
-        }
-        table, th, td {
-        border: 0px solid black;
-         border-collapse: collapse;
-        }
-        .rincian {
-            width: 80%;
+        .contact {
+            width: 90%;
             margin: auto;
             text-align: left;
-            margin-bottom: 50px;
+            padding-top: 60px;
+            color: #09464b;
         }
-        .rincian h3 {
-            font-weight: 600;
+        .column {
+            background-color: #FFF5E0;
+            padding: 10px;
+            height: 520px;
+            border-radius: 13px;
+            margin-bottom: 100px;
+            display: flex;
         }
-        .tabel-rincian table {
+        .kotakgambar {
+            width: 50%;
+            padding: 10px;
+            height: 500px;
+            background: url(image/home.jpg);
+            background-size: cover;
+            border-radius: 13px;
+        }
+        .kotakkata {
+            width: 50%;
+            padding: 10px;
+            height: 500px;
+            background-size: cover;
+            border-radius: 13px;
+            margin-left: 20px;
+            color: #09464b;
+            text-align: justify;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .room-col table {
             width: 100%;
             text-align: left;
-            margin-top: 15px;
+            border-collapse: collapse;
         }
-        #customers td, #customers th {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
-
-        #customers tr:hover {background-color: #ddd;}
-
-        #customers th {
-            padding-top: 12px;
-            padding-bottom: 12px;
+        th, td {
+            color: #09464b;
+            padding: 8px;
             text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
-        button {
-            margin-left: 90%;
-            border-radius: 6px;
-            margin-top: 15px;
-            padding: 10px 0;
-            color: cadetblue;
-            outline: none;
-            background-color: white;
-            border: 1px solid cadetblue;
-            width: 10%;
-            transition: .4s;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #09464b;
-            color: #ffffff;
-        }
-        label {
-            margin-left: 10px;
         }
     </style>
 </head>
@@ -166,81 +128,44 @@
             <a href="home.html">Home</a>
             <a href="galeri.html">Gallery</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a> 
+            <a href="contactUs.html">Contact</a> 
         </nav>
     </div>
 
     <section class="biaya">
         <table>
             <tr>
-                <td><h1>SPP Kelas Reguler</h1></td>
-                <td style="text-align: right;"><a href="karyawan.html">Karyawan ></td>
+                <td><h1>About Us</h1></td>
             </tr>
         </table>
-        
+    </section>
+    <div class="contact">
         <div class="row">
-            <div class="biaya-col">
-                <h3>Tunggakan</h3>
-                <hr class="garis" style="color: rgb(120, 36, 177);">
-                <p>Rp 10.000.000</p>
+            <div class="column">
+                <div class="kotakgambar"></div>
+                <div class="kotakkata">
+                    <h1>Website Pembayaran SPP</h1><br>
+                    <p>Sebuah situs web pembayaran SPP yang dibuat dengan menggunakan HTML dan CSS adalah sebuah platform online yang dirancang untuk memudahkan proses pembayaran Sumbangan Pembinaan Pendidikan (SPP) bagi siswa atau orang tua di sebuah institusi pendidikan. Dengan desain yang responsif dan ramah pengguna, situs web ini memberikan pengalaman yang lancar bagi pengguna yang ingin melakukan pembayaran SPP secara online.</p>
+                    <br><p>Dengan fitur unggulan :</p>    
+                    <div class="container">
+                        <table>
+                            <tr>
+                              <th>&#10004; Layanan Cepat</th>
+                              <th>&#10004; Finance Summary</th>
+                            </tr>
+                            <tr>
+                              <th>&#10004; Data aman</th>
+                              <th>&#10004; 24 jam online Service</th>
+                            </tr>
+                            <tr>
+                              <th>&#10004; Up To Date</th>
+                              <th>&#10004; Beragam Pembayaran</th>
+                            </tr>
+                          </table>
+                        </div>
+                </div>
             </div>
-            <div class="biaya-col">
-                <h3>*Syarat KRS</h3>
-                <hr class="garis" style="color: rgb(241, 114, 23);">
-                <p>Rp 500.000</p>
-            </div>
-            <div class="biaya-col">
-                <h3>*Syarat UAP</h3>
-                <hr class="garis" style="color: rgb(49, 92, 184);">
-                <p>Rp 1.500.000</p>
-            </div>
-            <div class="biaya-col">
-                <h3>*Syarat UPM</h3>
-                <hr class="garis" style="color: rgb(26, 226, 206);">
-                <p>Rp 1.500.000</p>
-            </div>    
         </div>
-    </section>
-
-    <section class="rincian">
-        <h3>Rincian Biaya</h3>
-
-        <div class="tabel-rincian">
-            <table id="customers">
-                <tr>
-                    <td><input type="checkbox"><label>SPP Semester</label><br></td>
-                    <td>5.000.000</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"><label>*UAP</label><br></td>
-                    <td>1.500.000</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"><label>*UPM</label><br></td>
-                    <td>1.500.000</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"><label>*KRS</label><br></td>
-                    <td>500.000</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"><label>*Registrasi</label><br></td>
-                    <td>1.000.000</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"><label>Lab Komputer</label><br></td>
-                    <td>500.000</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: 600; font-size: 20px;">Total</td>
-                    <td style="font-weight: 600; font-size: 20px;">10.000.000</td>
-                </tr>
-              </table>
-        </div>
-        <p style="margin-top: 10px; font-size: 13px;">Note</p>
-        <p style="font-size: 13px;">*) Pembayaran yang didahulukan</p>
-        <button type="submit">BAYAR</button>
-    </section>
-    
+    </div>
 </body>
 </html>
