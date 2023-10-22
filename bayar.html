@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ext</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #268690;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrapper {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        .container{
+            width: 700px;
+            border-radius: 8px;
+            padding: 40px;
+            
+        }
+
+        .container .title{
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container form input{
+            display: none;
+        }
+
+        .container form .category{
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+
+        .category label{
+            width: 100%;
+            height: 65px;
+            padding: 20px;
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        label:nth-child(2), label:nth-child(3), label:nth-child(4), label:nth-child(5){
+            margin: 15px 0;
+        }
+
+
+        #ovo:checked ~ .category .ovoMethod,
+        #gopay:checked ~ .category .gopayMethod,
+        #alfa:checked ~ .category .alfaMethod,
+        #BNI:checked ~ .category .bniMethod,
+        #MANDIRI:checked ~ .category .mandiriMethod,
+        #QRIS:checked ~ .category .qrisMethod{
+            box-shadow: 0px 0px 0px 1px #6064b6;
+        }
+
+
+        #ovo:checked ~ .category .ovoMethod .check,
+        #gopay:checked ~ .category .gopayMethod .check,
+        #alfa:checked ~ .category .alfaMethod .check,
+        #BNI:checked ~ .category .bniMethod .check,
+        #MANDIRI:checked ~ .category .mandiriMethod .check,
+        #QRIS:checked ~ .category .qrisMethod .check{
+            display: block;
+        }
+
+
+        label .imgName{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imgName span{
+            margin-left: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .imgName p {
+            color: #6b6b6b;
+            font-size: 14px;
+        }
+
+        .imgName .imgContainer{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            width: 50px;
+            height: auto;
+        }
+
+        .ovo img{
+            width: 30px;
+        }
+
+        .gopay img{
+            width: 55px;
+        }
+
+        .alfa img{
+            width: 60px;
+        }
+
+        .BNI img{
+            width: 50px;
+        }
+
+        .MANDIRI img{
+            width: 55px;
+        }
+
+        .QRIS img{
+            width: 55px;
+        }
+
+        .check{
+            display: none;
+           
+        }
+
+        .check i{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <div class="title">
+            <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+        </div>
+
+        <form action="#">
+            <input type="radio" name="payment" id="ovo">
+            <input type="radio" name="payment" id="gopay">
+            <input type="radio" name="payment" id="alfa">
+            <input type="radio" name="payment" id="BNI">
+            <input type="radio" name="payment" id="MANDIRI">
+            <input type="radio" name="payment" id="QRIS">
+
+
+            <div class="category">
+                <label for="ovo" class="ovoMethod">
+                    <div class="imgName">
+                        <div class="imgContainer ovo">
+                            <img src="image/ovo.png" alt="">
+                        </div>
+                        <span class="name">OVO</span>
+                        <p style="margin-left: 250px;">Biaya admin Rp.1000</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="gopay" class="gopayMethod">
+                    <div class="imgName">
+                        <div class="imgContainer gopay">
+                            <img src="image/gopay.png" alt="">
+                        </div>
+                        <span class="name">GOPAY</span>
+                        <p style="margin-left: 232px;">Biaya admin Rp.1000</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="alfa" class="alfaMethod">
+                    <div class="imgName">
+                        <div class="imgContainer alfa">
+                            <img src="image/alfa.png" alt="">
+                        </div>
+                        <span class="name">Alfamart</span>
+                        <p style="margin-left: 217px;">Biaya admin Rp.3000</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="BNI" class="bniMethod">
+                    <div class="imgName">
+                        <div class="imgContainer BNI">
+                            <img src="image/bni.png" alt="">
+                        </div>
+                        <span class="name">BNI</span>
+                        <p style="margin-left: 262px;">Biaya admin Rp.5000</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="MANDIRI" class="mandiriMethod">
+                    <div class="imgName">
+                        <div class="imgContainer MANDIRI">
+                            <img src="image/mandiri.png" alt="">
+                        </div>
+                        <span class="name">MANDIRI</span>
+                        <p style="margin-left: 223px;">Biaya admin Rp.5000</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+
+                <label for="QRIS" class="qrisMethod">
+                    <div class="imgName">
+                        <div class="imgContainer QRIS">
+                            <img src="image/qris1.png" alt="">
+                        </div>
+                        <span class="name">QRIS</span>
+                        <p style="margin-left: 252px;">Biaya admin Rp.0</p>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

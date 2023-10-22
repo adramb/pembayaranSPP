@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0;
@@ -156,6 +157,126 @@
         label {
             margin-left: 10px;
         }
+        .container{
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 40px;
+            
+        }
+
+        .container .title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .container form input{
+            display: none;
+        }
+
+        .container form .category{
+            margin-top: 10px;
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+
+        .category label{
+            height: 145px;
+            padding: 20px;
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #ovo:checked ~ .category .ovoMethod,
+        #gopay:checked ~ .category .gopayMethod,
+        #alfa:checked ~ .category .alfaMethod,
+        #BNI:checked ~ .category .bniMethod,
+        #MANDIRI:checked ~ .category .mandiriMethod,
+        #QRIS:checked ~ .category .qrisMethod{
+            box-shadow: 0px 0px 0px 2px #09464b;
+        }
+
+
+        #ovo:checked ~ .category .ovoMethod .check,
+        #gopay:checked ~ .category .gopayMethod .check,
+        #alfa:checked ~ .category .alfaMethod .check,
+        #BNI:checked ~ .category .bniMethod .check,
+        #MANDIRI:checked ~ .category .mandiriMethod .check,
+        #QRIS:checked ~ .category .qrisMethod .check{
+            display: block;
+        }
+
+
+        label .imgName{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .imgName span{
+            position: absolute;
+            margin-top: 33%;
+            transform: translateY(-72%);
+        }
+
+        .imgName .imgContainer{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 35%;
+            transform: translateY(-35%);
+        }
+
+        img{
+            width: 50px;
+            height: auto;
+        }
+
+        .ovo img{
+            width: 40px;
+        }
+
+        .gopay img{
+            width: 100px;
+        }
+
+        .alfa img{
+            width: 100px;
+        }
+
+        .BNI img{
+            width: 100  px;
+        }
+
+        .MANDIRI img{
+            width: 100px;
+        }
+
+        .QRIS img{
+            width: 90px;
+        }
+        .check{
+            display: none;
+            position: absolute;
+            top: -4px;
+            right: -4px;
+        }
+
+        .check i{
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -242,6 +363,83 @@
         </div>
         <p style="margin-top: 10px; font-size: 13px;">Note</p>
         <p style="font-size: 13px;">*) Pembayaran yang didahulukan</p>
+        <div class="container">
+            <div class="title">
+                <h4>Select a <span style="color: #09464b;">Payment</span> method</h4>
+            </div>
+    
+            <form action="#">
+                <input type="radio" name="payment" id="ovo">
+                <input type="radio" name="payment" id="gopay">
+                <input type="radio" name="payment" id="alfa">
+                <input type="radio" name="payment" id="BNI">
+                <input type="radio" name="payment" id="MANDIRI">
+                <input type="radio" name="payment" id="QRIS">
+    
+    
+                <div class="category">
+                    <label for="ovo" class="ovoMethod">
+                        <div class="imgName">
+                            <div class="imgContainer ovo">
+                                <img src="image/ovo.png" alt="">
+                            </div>
+                            <span class="name">OVO</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+    
+                    <label for="gopay" class="gopayMethod">
+                        <div class="imgName">
+                            <div class="imgContainer gopay">
+                                <img src="image/gopay.png" alt="">
+                            </div>
+                            <span class="name">GOPAY</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+    
+                    <label for="alfa" class="alfaMethod">
+                        <div class="imgName">
+                            <div class="imgContainer alfa">
+                                <img src="image/alfa.png" alt="">
+                            </div>
+                            <span class="name">Alfamart</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+    
+                    <label for="BNI" class="bniMethod">
+                        <div class="imgName">
+                            <div class="imgContainer BNI">
+                                <img src="image/bni.png" alt="">
+                            </div>
+                            <span class="name">BNI</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+    
+                    <label for="MANDIRI" class="mandiriMethod">
+                        <div class="imgName">
+                            <div class="imgContainer MANDIRI">
+                                <img src="image/mandiri.png" alt="">
+                            </div>
+                            <span class="name">MANDIRI</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+    
+                    <label for="QRIS" class="qrisMethod">
+                        <div class="imgName">
+                            <div class="imgContainer QRIS">
+                                <img src="image/qris1.png" alt="">
+                            </div>
+                            <span class="name">QRIS</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
+                    </label>
+                </div>
+            </form>
+        </div>
         <button type="button">BAYAR</button>
     </section>
     
