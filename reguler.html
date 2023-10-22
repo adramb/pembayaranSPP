@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - SPP</title>
+    <title>RegFinance - SPP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -98,10 +98,10 @@
         .biaya-col p {
             margin-top: 20px;
         }
-        hr.garis {
+        .garis {
+            width: 50%;
             margin-top: 5px;
             border: 2px solid;
-            margin-right: 140px;
         }
         table, th, td {
         border: 0px solid black;
@@ -145,12 +145,13 @@
             color: cadetblue;
             outline: none;
             background-color: white;
-            border: 1px solid cadetblue;
+            border: 3px solid cadetblue;
             width: 10%;
             transition: .4s;
             cursor: pointer;
         }
         button:hover {
+            border: 3px solid #09464b;;
             background-color: #09464b;
             color: #ffffff;
         }
@@ -166,7 +167,6 @@
 
         .container .title{
             font-size: 20px;
-            font-weight: 600;
         }
 
         .container form input{
@@ -257,11 +257,11 @@
         }
 
         .BNI img{
-            width: 100  px;
+            width: 100px;
         }
 
         .MANDIRI img{
-            width: 100px;
+            width: 110px;
         }
 
         .QRIS img{
@@ -305,7 +305,7 @@
         <div class="row">
             <div class="biaya-col">
                 <h3>Unpaid</h3>
-                <hr class="garis" style="color: rgb(120, 36, 177);">
+                <hr class="garis" style="color: rgb(205, 129, 255);">
                 <p>Rp 10.000.000</p>
             </div>
             <div class="biaya-col">
@@ -315,7 +315,7 @@
             </div>
             <div class="biaya-col">
                 <h3>*Syarat UAP</h3>
-                <hr class="garis" style="color: rgb(49, 92, 184);">
+                <hr class="garis" style="color: rgb(106, 190, 255);">
                 <p>Rp 1.500.000</p>
             </div>
             <div class="biaya-col">
@@ -365,7 +365,7 @@
         <p style="font-size: 13px;">*) Pembayaran yang didahulukan</p>
         <div class="container">
             <div class="title">
-                <h4>Select a <span style="color: #09464b;">Payment</span> method</h4>
+                <h4 style="font-weight: 600;">Select a <span style="color: #09464b;">Payment</span> method</h4>
             </div>
     
             <form action="#">
