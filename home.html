@@ -127,10 +127,16 @@
             cursor: pointer;
             font-size: 14px;
             font-weight: 600;
+            box-shadow: 3px 3px 0 0 #000;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94),box-shadow .3s cubic-bezier(.25, .46, .45, .94);
+            color: #18181d;
+            text-decoration: none;
         }
         button:hover {
             background-color: cadetblue;
             color: #ffffff;
+            box-shadow: 1px 1px 0 0 #000;
+            transform: translate(2px,2px);
         }
         .kelas-col i {
             margin-top: 5px;
@@ -140,13 +146,13 @@
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo">Sumeru Akademiya</a>
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
 
         <nav class="navbar">
             <a href="home.html">Home</a>
-            <a href="galeri.html">Gallery</a>
+            <a href="galeri.html">News</a>
             <a href="about.html">About</a>
-            <a href="contactUs.html">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
     <div class="kata">

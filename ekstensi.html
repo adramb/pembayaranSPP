@@ -150,7 +150,7 @@
             background-color: white;
             border: 3px solid cadetblue;
             width: 10%;
-            transition: .4s;
+            transition: .3s;
             cursor: pointer;
         }
         button:hover {
@@ -196,7 +196,7 @@
             position: relative;
         }
 
-        #ovo:checked ~ .category .ovoMethod,
+        #bsi:checked ~ .category .bsiMethod,
         #gopay:checked ~ .category .gopayMethod,
         #alfa:checked ~ .category .alfaMethod,
         #BNI:checked ~ .category .bniMethod,
@@ -206,7 +206,7 @@
         }
 
 
-        #ovo:checked ~ .category .ovoMethod .check,
+        #bsi:checked ~ .category .bsiMethod .check,
         #gopay:checked ~ .category .gopayMethod .check,
         #alfa:checked ~ .category .alfaMethod .check,
         #BNI:checked ~ .category .bniMethod .check,
@@ -244,10 +244,14 @@
         img{
             width: 50px;
             height: auto;
+            transition: .3s;
+        }
+        img:hover {
+            transform: scale(1.3);
         }
 
-        .ovo img{
-            width: 40px;
+        .bsi img{
+            width: 110px;
         }
 
         .gopay img{
@@ -263,7 +267,7 @@
         }
 
         .MANDIRI img{
-            width: 110px;
+            width: 120px;
         }
 
         .QRIS img{
@@ -283,13 +287,13 @@
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo">Sumeru Akademiya</a>
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
 
         <nav class="navbar">
             <a href="home.html">Home</a>
-            <a href="rekap.html">Summary</a>
+            <a href="rekapExt.html">Summary</a>
             <a href="about.html">About</a>
-            <a href="contactUs.html">Contact</a> 
+            <a href="contact.html">Contact</a> 
         </nav>
     </div>
 
@@ -379,11 +383,11 @@
         <p style="font-size: 13px;">*) Pembayaran yang didahulukan</p>
         <div class="container">
             <div class="title">
-                <h4 style="font-weight: 600;">Select a <span style="color: #09464b;">Payment</span> method</h4>
+                <h4 style="font-weight: 600;">Pilih Metode <span style="color: #09464b;">Pembayaran</span></h4>
             </div>
     
             <form action="#">
-                <input type="radio" name="payment" id="ovo">
+                <input type="radio" name="payment" id="bsi">
                 <input type="radio" name="payment" id="gopay">
                 <input type="radio" name="payment" id="alfa">
                 <input type="radio" name="payment" id="BNI">
@@ -392,12 +396,12 @@
     
     
                 <div class="category">
-                    <label for="ovo" class="ovoMethod">
+                    <label for="bsi" class="bsiMethod">
                         <div class="imgName">
-                            <div class="imgContainer ovo">
-                                <img src="image/ovo.png" alt="">
+                            <div class="imgContainer bsi">
+                                <img src="image/bsi.png" alt="">
                             </div>
-                            <span class="name">OVO</span>
+                            <span class="name">BSI</span>
                         </div>
                         <span class="check"><i class="fa-solid fa-circle-check" style="color: #09464b;"></i></span>
                     </label>

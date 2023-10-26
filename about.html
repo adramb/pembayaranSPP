@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         *{
             margin: 0;
@@ -57,46 +58,50 @@
         .navbar a:hover::before {
             width: 100%;
         }
-        .biaya {
+        .about {
             width: 80%;
             margin: auto;
-            text-align: left;
-            padding-top: 150px;
+            text-align: center;
+            padding-top: 100px;
         }
-        .biaya table {
+        .about table {
             width: 100%;
             border: 0px;
         }
-        .biaya h1 {
+        .about h1 {
             color: #FFF5E0;
             font-size: 36px;
             font-weight: 600;
+            text-align: center;
         }
         .contact {
             width: 90%;
             margin: auto;
             text-align: left;
-            padding-top: 60px;
+            margin-top: 20px;
             color: #09464b;
         }
         .column {
-            background-color: #FFF5E0;
+            margin-top: 50px;
             padding: 10px;
             height: 520px;
             border-radius: 13px;
-            margin-bottom: 100px;
+            margin-bottom: 25px;
             display: flex;
+            background-color: #FFF5E0;
         }
         .kotakgambar {
             width: 50%;
             padding: 10px;
             height: 500px;
-            background: url(image/school.jpg);
+            background: url(image/campus.jpg);
             background-size: cover;
-            border-radius: 13px;
+            border-radius: 10px;
+            top: 0;
+            text-align: right;
         }
         .kotakkata {
-            margin-top: 30px;
+            
             width: 50%;
             padding: 10px;
             height: 500px;
@@ -119,33 +124,44 @@
             padding: 8px;
             text-align: left;
         }
+        .kotakgambar i {
+            font-size: 25px;
+            cursor: pointer;
+        }
+        
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo">Sumeru Akademiya</a>
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
 
         <nav class="navbar">
             <a href="home.html">Home</a>
-            <a href="galeri.html">Gallery</a>
+            <a href="galeri.html">News</a>
             <a href="about.html">About</a>
-            <a href="contactUs.html">Contact</a> 
+            <a href="contact.html">Contact</a> 
         </nav>
     </div>
 
-    <section class="biaya">
+    <section class="about">
         <table>
             <tr>
-                <td><h1>About Us</h1></td>
+                <td><h1></h1></td>
             </tr>
         </table>
     </section>
     <div class="contact">
         <div class="row">
             <div class="column">
-                <div class="kotakgambar"></div>
+                <div class="kotakgambar">
+                    <div class="icon">
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-facebook-square' ></i>
+                    </div>
+                </div>
                 <div class="kotakkata">
-                    <h1>Website Pembayaran SPP</h1><br>
+                    <h1>About Website<br>Pembayaran SPP</h1><br>
                     <p>Sebuah situs web pembayaran SPP yang dibuat dengan menggunakan HTML dan CSS adalah sebuah platform online yang dirancang untuk memudahkan proses pembayaran Sumbangan Pembinaan Pendidikan (SPP) bagi siswa atau orang tua di sebuah institusi pendidikan. Dengan desain yang responsif dan ramah pengguna, situs web ini memberikan pengalaman yang lancar bagi pengguna yang ingin melakukan pembayaran SPP secara online.</p>
                     <br><p>Dengan fitur unggulan :</p>    
                     <div class="container">

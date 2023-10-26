@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 120px;
+            background-color: #09464b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 27px;
+            color: #FFF5E0;
+            font-weight: 600;
+        }
+        .navbar a {
+            position: relative;
+            text-decoration: none;
+            color: #FFF5E0;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background : #FFF5E0;
+            transition: .5s;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        body {
+            background-color: #ffffff;
+        }
+        .kontak {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            padding-top: 30px;
+            margin-top: 90px;
+        }
+        .container{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+        }
+
+        .container .inputbox{
+            width: 100%;
+            position: relative;
+        }
+
+        .container .inputbox input{
+            width: 100%;
+            position: relative;
+            padding: 8px 10px;
+            border: none;
+            outline: none;
+            font-size: 1.15em;
+            z-index: 2;
+            background: transparent;
+            color: #fff;
+        }
+
+        .container .inputbox span{
+            position: absolute;
+            left: 0;
+            padding: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #3b3b3b;
+            letter-spacing: 0.05em;
+        }
+
+        .container .inputbox input:valid ~ span,
+        .container .inputbox input:focus ~ span,
+        .container .inputbox textarea:valid ~ span,
+        .container .inputbox textarea:focus ~ span{
+            font-size: 0.85em;
+            transform: translateY(-32px); 
+        }
+
+        .container .inputbox i{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #09464b;
+            transition: 0.5s;
+            z-index: 1;
+            border-radius: 4px;
+            pointer-events: none;
+        }
+
+        .container .inputbox input:valid ~ i,
+        .container .inputbox input:focus ~ i,
+        .container .inputbox textarea:valid ~ i,
+        .container .inputbox textarea:focus ~ i {
+        height: 100%;
+        }
+        .container .inputbox textarea {
+            width: 100%;
+            position: relative;
+            padding: 8px 10px;
+            border: none;
+            outline: none;
+            font-size: 1.15em;
+            z-index: 2;
+            background: transparent;
+            color: #fff;
+            height: 200px;
+            resize: none;
+        }
+        .kata {
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+        .kata h1 {
+            font-weight: 600;
+        }
+        button {
+            margin-top: 10px;
+            margin-left: 83%;
+            padding: 10px 0;
+            color: #000000;
+            outline: none;
+            background-color: cadetblue;
+            border: 0px;
+            width: 15%;
+            cursor: pointer;
+            border-radius: 13px;
+            transition: .3s;
+            box-shadow: 3px 3px 0 0 #000000;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94),box-shadow .3s cubic-bezier(.25, .46, .45, .94);
+
+        }
+        button:hover {
+            background-color: #09464b;
+            color: #ffffff;
+            box-shadow: 1px 1px 0 0 #000;
+            transform: translate(2px,2px);
+        }
+        .kon .category{
+            display: flex;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 30px;
+            
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 110px;
+            margin-bottom: 30px;
+        }
+        .kotak {
+            margin-top: 20px;
+        }
+        .category p{
+            height: 90px;   
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #000000;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .category p:hover {
+            transform: scale(1.1);
+        }
+        .category b {
+            font-size: 23px;
+            cursor:default;
+            font-weight: 600;
+        }
+        .category a {
+            text-decoration: none;
+            color: #aa8537;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contactUs.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="kontak">
+        <div class="kata">
+            <h1>Send your request</h1>
+        </div>
+        <div class="container">
+            <div class="inputbox">
+                <input type="text" required />
+                <span>Name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required />
+                <span>Phone No.</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required />
+                <span>Email</span>
+                <i></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="inputbox">
+                <textarea id="message" rows="8" required></textarea>
+                <span>Massage</span>
+                <i></i>
+            </div>
+        </div>
+
+        <button type="submit">SEND</button>
+
+        <div class="kon">
+            <div class="category">
+                <div class="kotak">
+                <p><b>Layanan Umum</b><br><a href="https://api.whatsapp.com/send/?phone=6285172421022&text&type=phone_number&app_absent=0">+62 8123 45678</p></a></div>
+                <div class="kotak">
+                <p><b>Email Akademiya</b><br><a href="mailto:contact@akademiya.sumeru">contact@akademiya.sumeru</p></a></div>
+                <div class="kotak">
+                <p><b>Kantor</b><br><a href="https://maps.app.goo.gl/ET6kQexc7iHhVSUp6">'106 Yazadaha Pool, Sumeru City</p></a></div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

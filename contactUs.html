@@ -139,11 +139,17 @@
             cursor: pointer;
             border-radius: 13px;
             transition: .3s;
+            box-shadow: 3px 3px 0 0 #000000;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94),box-shadow .3s cubic-bezier(.25, .46, .45, .94);
+            color: #18181d;
+            text-decoration: none;
 
         }
         button:hover {
             background-color: cadetblue;
             color: #ffffff;
+            box-shadow: 1px 1px 0 0 #000;
+            transform: translate(2px,2px);
         }
         input:focus~label,
         input:valid~label,
@@ -180,7 +186,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo">Sumeru Akademiya</a>
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
 
         <nav class="navbar">
             <a href="home.html">Home</a>

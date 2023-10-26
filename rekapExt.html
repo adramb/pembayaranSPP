@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - SPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 5px 100px;
+            background-color:#FFF5E0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 27px;
+            color: #09464b;
+            font-weight: 600;
+        }
+        .navbar a {
+            position: relative;
+            text-decoration: none;
+            color: #09464b;
+            font-size: 15px;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background :#09464b;
+            transition: .5s;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        .biaya {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            padding-top: 150px;
+        }
+        .biaya a {
+            text-decoration: none;
+            color: #bebebe;
+        }
+        .biaya table {
+            width: 100%;
+            border: 0px;
+        }
+        .biaya h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .row {
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+        .biaya-col {
+            width: 100%;
+            background: #09464b;
+            color: #ffffff;
+            border-radius: 15px;
+            margin-bottom: 2%;
+            padding: 30px 30px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .biaya-col:hover {
+            background: cadetblue;
+            transform: scale(1.1)
+
+        }
+        .biaya-col h3 {
+            text-align: left;
+            font-weight: 600;
+
+        }
+        .biaya-col p {
+            margin-top: 20px;
+        }
+        hr.garis {
+            margin-top: 5px;
+            border: 1px solid;
+            
+        }
+        nav {
+            display: flex;
+            padding: 2% 4%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            flex-basis: 31%;
+            flex: 1;
+            text-align: center;
+        }
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+        }
+        .nav-links ul li a {
+            color: #09464b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 23px;
+        }
+        .nav-links ul li a:hover {
+          color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="logo">Sumeru Akademiya</a>
+
+        <nav class="navbar">
+            <a href="ekstensi.html">Finance</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <section class="biaya">
+        <table>
+            <tr>
+                <td>Hi, Rahman - Kelas Extension</td>
+            </tr>
+            <tr>
+                <td><h1>Finance Summary</h1></td>
+                <!--<td style="text-align: right;"><a href="reguler.html">Reguler ></td>-->
+            </tr>
+        </table>
+
+        <div class="row">
+            <div class="biaya-col">
+                <h3>Summary</h3>
+                <hr class="garis" style="color: rgb(120, 36, 177);">
+                <p>Rp 75.000.000</p>
+            </div>
+            <div class="biaya-col">
+                <h3>*Unpaid</h3>
+                <hr class="garis" style="color: rgb(241, 114, 23);">
+                <p>Rp 15.000.000</p>
+            </div>
+            <div class="biaya-col">
+                <h3>Charge</h3>
+                <hr class="garis" style="color: rgb(49, 92, 184);">
+                <p>Rp 2.000.000</p>
+            </div>
+            <!--<div class="biaya-col">
+                <h3>*Syarat UPM</h3>
+                <hr class="garis" style="color: rgb(26, 226, 206);">
+                <p>Rp 2.000.000</p>-->
+            </div>
+        </div>
+        </section>
+        <nav>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="#">Summary</a></li>
+                  <li><a href="#">Unpaid</a></li>
+                  <li><a href="#">Charge</a></li>
+              </ul>
+          </div>
+      </nav>
+        </body>
+        </html>
